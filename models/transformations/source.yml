@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: dbt_svasan
+    database: dbt
+    tables:
+      - name: LIMITED_COLUMNS
+      - name: MY_FIRST_DBT_MODEL
+      - name: MY_SECOND_DBT_MODEL
+      - name: TABLES
+
