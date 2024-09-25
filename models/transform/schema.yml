@@ -6,3 +6,7 @@ models:
       enabled : true
       tags: ['google_drive']
 
+  - name: stg_invoices_2
+    config:
+      enabled : true
+      tags: ['google_drive']
