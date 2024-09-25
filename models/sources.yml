@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: sources_google_drive
+    database: "{{target.name}}_sources"
+    schema: google_drive
+    tables:
+      - name: inivoices
+      
