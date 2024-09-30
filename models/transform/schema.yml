@@ -7,6 +7,17 @@ models:
       tags: ['google_drive']
 
   - name: stg_invoices_2
+    columns:
+       - name: email
+         tests:
+           - unique
+           - not_null
     config:
       enabled : true
       tags: ['google_drive']
+
+  - name: stg_invoices_3
+    config:
+      enabled : true
+      tags: ['google_drive']
+
