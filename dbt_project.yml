@@ -47,3 +47,10 @@ models:
       +transient: false
       +database: "{{target.name}}_transform"
       +schema: google_drive
+
+seeds:
+  my_new_project:
+    +enabled: true
+    +database: "{{target.name}}_transform"
+    +schema: google_drive
+
