@@ -54,3 +54,5 @@ seeds:
     +database: "{{target.name}}_transform"
     +schema: google_drive
 
+data_tests:
+  +store_failures: true

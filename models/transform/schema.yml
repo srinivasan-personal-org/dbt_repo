@@ -3,22 +3,26 @@ version: 2
 models:
   - name: stg_invoices
     config:
-      enabled : true
-      tags: ['google_drive']
+      enabled: true
+      tags: ["google_drive"]
 
   - name: stg_invoices_2
-    # columns:
-    #    - name: email
-    #      tests:
-    #        - unique
-    #        - not_null
+    columns:
+      #  - name: total
+      #    data_tests:
+      #      - is_even
+      - name: last_modified_time
+        data_tests:
+          - test_last_modified_time
+      #  - name: email
+      #    data_tests:
+      #      - unique
+      #      - not_null
     config:
-      enabled : true
-      tags: ['google_drive']
+      enabled: true
+      tags: ["google_drive"]
 
   - name: stg_invoices_3
     config:
-      enabled : true
-      tags: ['google_drive']
-
-      
+      enabled: true
+      tags: ["google_drive"]
