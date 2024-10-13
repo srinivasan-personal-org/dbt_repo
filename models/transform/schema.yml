@@ -26,3 +26,13 @@ models:
     config:
       enabled: true
       tags: ["google_drive"]
+  
+  - name: ephemeral_invoices
+    config:
+      enabled: true
+      tags: ['google_drive']
+
+  - name: invoice_snapshot_from_ephemeral
+    config:
+      enabled: true
+      tags: ['google_drive']
