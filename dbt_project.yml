@@ -56,3 +56,11 @@ seeds:
 
 data_tests:
   +store_failures: true
+
+# snapshots:
+#   my_new_project:
+#     +strategy: timestamp
+#     +unique_key: date
+#     +enabled: true
+#     +tags: google_drive
+
