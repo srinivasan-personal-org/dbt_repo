@@ -6,4 +6,19 @@ sources:
     schema: google_drive
     tables:
       - name: inivoices
+  
+  - name: sources_public
+    database: "{{target.name}}_sources"
+    schema: public
+    tables:
+      - name: INVOICES_HISTORICAL
+        tags: ['test_test']
+      - name: INVOICES_MONTLY
+        tags: ['test_test']
+        columns:
+          - name: invoice_id
+            data_tests:
+              - not_null
+              
+             
       

@@ -7,13 +7,13 @@ models:
       tags: ["google_drive"]
 
   - name: stg_invoices_2
-    columns:
+    # columns:
       #  - name: total
       #    data_tests:
       #      - is_even
-      - name: last_modified_time
-        data_tests:
-          - test_last_modified_time
+      # - name: last_modified_time
+      #   data_tests:
+      #     - test_last_modified_time
       #  - name: email
       #    data_tests:
       #      - unique
@@ -36,3 +36,14 @@ models:
     config:
       enabled: true
       tags: ['google_drive']
+
+  - name: total_invoices
+    columns:
+      - name: INVOICE_ID
+        data_tests:
+          - not_null
+          - unique
+    config:
+      enabled: true
+      tags: ['test_test']
+      
