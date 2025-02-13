@@ -6,4 +6,9 @@ sources:
     schema: google_drive
     tables:
       - name: inivoices
+  - name: SOURCES_PROD_SOURCES_TEST_PUBLIC
+    database: "PROD_SOURCES_TEST"
+    schema: "PUBLIC"
+    tables:
+      - name: schema_evolution_check_tbl
       
