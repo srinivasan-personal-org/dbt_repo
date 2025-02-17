@@ -1,11 +1,11 @@
 version: 2
 
 sources:
-  - name: sources_google_drive
-    database: "{{target.name}}_sources"
-    schema: google_drive
-    tables:
-      - name: inivoices
+  # - name: sources_google_drive
+  #   database: "{{target.name}}_sources"
+  #   schema: google_drive
+  #   tables:
+  #     - name: inivoices
   - name: SOURCES_PROD_SOURCES_TEST_PUBLIC
     database: "PROD_SOURCES_TEST"
     schema: "PUBLIC"
