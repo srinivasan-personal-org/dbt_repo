@@ -1,9 +1,8 @@
 version: 2
 
 sources:
-  - name: SOURCES_PROD_SOURCES_TEST_PUBLIC
-    database: "PROD_SOURCES_TEST"
-    schema: "PUBLIC"
+  - name: sources_google_drive
+    database: "{{target.name}}_sources"
+    schema: google_drive
     tables:
-      - name: schema_evolution_check_tbl
-      
+      - name: inivoices
