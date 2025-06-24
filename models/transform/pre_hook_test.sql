@@ -1,9 +1,9 @@
 {{
   config(
-    pre_hook="select '20' as count;"
+    pre_hook="select model from PROD_SOURCES.SALESFORCE.FIVETRAN_FORMULA_MODEL where object = 'serp_location_c';"
     
   )
 }}
 
 
-select '1' as count;
+select {{'pre_hook'}} as count

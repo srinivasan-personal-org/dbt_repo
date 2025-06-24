@@ -54,13 +54,18 @@ seeds:
     +database: "{{target.name}}_transform"
     +schema: google_drive
 
+snapshots:
+  dbt_repo:
+    +transient: false
+
+    pstg:
+      +target_database: "{{ target.name }}_persistent_staging"
+      +target_schema: ecommerce_anwd
+      
+
+
+
+
 data_tests:
   +store_failures: true
-
-# snapshots:
-#   my_new_project:
-#     +strategy: timestamp
-#     +unique_key: date
-#     +enabled: true
-#     +tags: google_drive
 
